@@ -1,6 +1,15 @@
 Change Log
 ==========
 
+**Removed**
+
+* Return values from :meth:`.Comment.block`, :meth:`.Message.block`,
+  :meth:`.SubredditMessage.block`, :meth:`.SubredditFlair.delete`,
+  :meth:`.friend`, :meth:`.Redditor.message`, :meth:`.Subreddit.message`,
+  :meth:`.select`, and :meth:`.unfriend` are removed as they do not provide
+  any useful information.
+
+
 Unreleased
 ----------
 
