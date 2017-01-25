@@ -41,6 +41,8 @@ class Redditor(RedditBase, MessageableMixin, RedditorListingMixin):
     def _friend(self, method, data):
         url = API_PATH['friend_v1'].format(user=self)
         # PRAW5 REMOVE (return statement)
+        print("HERE IS THE REQUEST URL")
+        print(url)
         return self._reddit.request(method, url, data=dumps(data))
 
     def friend(self, note=None):
